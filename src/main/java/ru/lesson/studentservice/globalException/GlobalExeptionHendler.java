@@ -1,4 +1,4 @@
-package ru.lesson.studentservice.globalExption;
+package ru.lesson.studentservice.globalException;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
