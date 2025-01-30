@@ -20,7 +20,8 @@ public class UserController {
 
 
     @PostMapping("/save") public User getUserAndForCarUser(@RequestBody UserCarDTO userCarDTO) {
-        return userService.save(userCarDTO.getUser(), userCarDTO.getCar()); }
+        return userService.save(userCarDTO);
+    }
 
 
 

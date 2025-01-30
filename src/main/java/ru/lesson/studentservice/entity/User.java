@@ -18,8 +18,8 @@ public class User {
     private String firstName;
     private int age;
 
-    @OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.REMOVE},fetch = FetchType.EAGER)
-
+    @OneToMany(mappedBy = "user",
+            cascade = {CascadeType.PERSIST, CascadeType.REMOVE},fetch = FetchType.EAGER)
     private List<Car> cars = new ArrayList<>();
 
     public User(String firstName, int age) {
